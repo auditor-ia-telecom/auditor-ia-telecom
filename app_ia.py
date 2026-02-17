@@ -6,7 +6,7 @@ import tempfile
 
 # 1. CONFIGURACIÓN DE PÁGINA (Nivel PRO)
 st.set_page_config(page_title="IA Auditor Técnico", page_icon="📡", layout="wide")
-st.title("📡 Sistema de Auditoría de Pliegos - Ing. Cristian Loyola")
+st.title("📡 Sistema de Auditor")
 
 # 2. INICIALIZAR ESTADOS DE MEMORIA
 if "messages" not in st.session_state:
@@ -112,4 +112,5 @@ else:
         st.warning("⚠️ Por favor, ingresá tu API Key en la barra lateral para comenzar.")
     if not archivos_subidos:
         st.info("👋 Subí al menos un archivo PDF para habilitar el análisis del Agente.")
+
 
